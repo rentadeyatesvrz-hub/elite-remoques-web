@@ -1,24 +1,28 @@
+import imgTrailer1 from '../assets/catalog/trailer-1.jpeg';
+import imgTrailer2 from '../assets/catalog/trailer-2.jpeg';
+import imgTrailer3 from '../assets/catalog/trailer-3.jpeg';
+
 const products = [
   {
     id: 1,
-    title: "Remolque Cerrado Cargo X-200",
-    price: "$12,500 USD",
-    desc: "Ideal para transportar mercancía sensible al clima. Chasis reforzado y ejes tándem.",
-    img: "https://images.unsplash.com/photo-1610660600109-8d7d65dfcb69?q=80&w=800&auto=format&fit=crop"
+    title: "Remolque Náutico Elite Doble Eje",
+    price: "$5,500 USD",
+    desc: "Diseñado para yates y lanchas pesadas. Estructura galvanizada en caliente resistente a la corrosión marina. Soporta hasta 8,000 lbs.",
+    img: imgTrailer1
   },
   {
     id: 2,
-    title: "Remolque Náutico AquaTrek",
-    price: "$4,200 USD",
-    desc: "Diseñado específicamente para embarcaciones de hasta 24 pies. Galvanizado en caliente.",
-    img: "https://images.unsplash.com/photo-1587840134442-70b925f694e9?q=80&w=800&auto=format&fit=crop"
+    title: "Remolque AquaSport Pro",
+    price: "$3,800 USD",
+    desc: "Ideal para lanchas deportivas y motos acuáticas. Rodillos ajustables, luces LED sumergibles y winche de alta capacidad.",
+    img: imgTrailer2
   },
   {
     id: 3,
-    title: "Plataforma Heavy Duty Pro",
-    price: "$8,900 USD",
-    desc: "Plataforma abierta para maquinaria y vehículos. Capacidad de carga de 10,000 lbs.",
-    img: "https://images.unsplash.com/photo-1549429598-a3206fb5d9ef?q=80&w=800&auto=format&fit=crop"
+    title: "Plataforma Náutica Heavy Duty",
+    price: "$7,200 USD",
+    desc: "Plataforma especializada para embarcaciones de gran eslora. Frenos de disco hidráulicos en ambos ejes para máxima seguridad.",
+    img: imgTrailer3
   }
 ];
 
