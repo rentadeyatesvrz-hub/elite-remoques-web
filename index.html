@@ -1,134 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Venta de remolques de alta calidad y renta de yates exclusivos.">
     <title>Elite Trailers | Venta de Remolques</title>
-    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body class="dark-theme">
-    
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">ELITE<span>TRAILERS</span></a>
-            
-            <!-- Mobile Menu Button -->
-            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menú">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-            </button>
-
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#hero" class="active">Inicio</a></li>
-                <li><a href="#catalog">Remolques en Venta</a></li>
-                <li><a href="#rentas" class="accent-link">Renta de Lanchas/Yates</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header id="hero" class="hero">
-        <div class="hero-bg"></div>
-        <div class="container hero-content">
-            <span class="badge">Calidad Premium</span>
-            <h1>Transporta con <span>Seguridad y Estilo</span></h1>
-            <p>Descubre nuestra línea exclusiva de remolques diseñados para máxima durabilidad. Soluciones ideales para carga, vehículos y embarcaciones.</p>
-            <div class="hero-actions">
-                <a href="#catalog" class="btn btn-primary">Ver Catálogo</a>
-                <a href="#rentas" class="btn btn-secondary">Explorar Yates</a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Catalog Section -->
-    <section id="catalog" class="catalog-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Remolques en Venta</h2>
-                <p>Nuestra selección de remolques de alta gama, listos para el trabajo pesado.</p>
-            </div>
-            
-            <div class="grid catalog-grid">
-                <!-- Product Card 1 -->
-                <article class="product-card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1610660600109-8d7d65dfcb69?q=80&w=800&auto=format&fit=crop" alt="Remolque de Carga Cerrado" loading="lazy">
-                        <div class="price-tag">$12,500 USD</div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Remolque Cerrado Cargo X-200</h3>
-                        <p>Ideal para transportar mercancía sensible al clima. Chasis reforzado y ejes tándem.</p>
-                        <button class="btn btn-outline reserve-btn">Solicitar Info</button>
-                    </div>
-                </article>
-
-                <!-- Product Card 2 -->
-                <article class="product-card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1587840134442-70b925f694e9?q=80&w=800&auto=format&fit=crop" alt="Remolque para Lanchas" loading="lazy">
-                        <div class="price-tag">$4,200 USD</div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Remolque Náutico AquaTrek</h3>
-                        <p>Diseñado específicamente para embarcaciones de hasta 24 pies. Galvanizado en caliente.</p>
-                        <button class="btn btn-outline reserve-btn">Solicitar Info</button>
-                    </div>
-                </article>
-
-                <!-- Product Card 3 -->
-                <article class="product-card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1549429598-a3206fb5d9ef?q=80&w=800&auto=format&fit=crop" alt="Remolque Plataforma" loading="lazy">
-                        <div class="price-tag">$8,900 USD</div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Plataforma Heavy Duty Pro</h3>
-                        <p>Plataforma abierta para maquinaria y vehículos. Capacidad de carga de 10,000 lbs.</p>
-                        <button class="btn btn-outline reserve-btn">Solicitar Info</button>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Firebase Configuration & Scripts -->
-    <script type="module" src="firebase-config.js"></script>
-    <script type="module" src="app.js"></script>
-
-    <!-- Botpress Webchat Integration -->
-    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-    <script>
-      window.botpressWebChat.init({
-          "composerPlaceholder": "Chatea con Mia",
-          "botConversationDescription": "Asistente Virtual - Elite Trailers & Yachts",
-          "botId": "bcf1a9b6-dee4-46a7-94d0-423962ce9a36",
-          "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
-          "messagingUrl": "https://messaging.botpress.cloud",
-          "clientId": "bcf1a9b6-dee4-46a7-94d0-423962ce9a36",
-          "lazySocket": true,
-          "themeName": "prism",
-          "botName": "Mia",
-          "frontendVersion": "v1",
-          "theme": "prism",
-          "themeColor": "#2563eb",
-          "className": "dark-botpress",
-          "containerWidth": "100%25",
-          "layoutWidth": "100%25",
-          "hideWidget": false,
-          "disableAnimations": false,
-          "closeOnEscape": true,
-          "showConversationsButton": true,
-          "enableTranscriptDownload": false
-      });
-    </script>
-</body>
+  </head>
+  <body class="bg-dark-900 text-gray-50 font-sans antialiased overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
