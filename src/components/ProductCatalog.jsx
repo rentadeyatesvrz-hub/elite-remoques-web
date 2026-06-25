@@ -1,4 +1,4 @@
-import imgTrailer1 from '../assets/catalog/trailer-1.jpeg';
+import heroBg from '../assets/catalog/hero-trailer.jpeg';
 import imgTrailer2 from '../assets/catalog/trailer-2.jpeg';
 import imgTrailer3 from '../assets/catalog/trailer-3.jpeg';
 
@@ -8,7 +8,7 @@ const products = [
     title: "Remolque Náutico Elite Doble Eje",
     price: "$5,500 USD",
     desc: "Diseñado para yates y lanchas pesadas. Estructura galvanizada en caliente resistente a la corrosión marina. Soporta hasta 8,000 lbs.",
-    img: imgTrailer1
+    img: heroBg
   },
   {
     id: 2,
